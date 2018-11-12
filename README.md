@@ -16,8 +16,8 @@ This is the repo for my frontend data project.
 
 ## To Do 📌
 This is a list of things in want to do in this project:
-- [ ] Git, npm, and d3 are used; the project runs without errors; data is loaded with d3; there is a representation of data
-- [ ] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself
+- [X] Git, npm, and d3 are used; the project runs without errors; data is loaded with d3; there is a representation of data
+- [X] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself
 - [ ] d3 is used to clean data and make an interactive representation; Data is transformed
 - [ ] Representation and use of a d3 go beyond an example: there are demonstrable additions like well-chosen interaction methods
 - [ ] The way the student applies subject matter is more advanced than what they were taught in class; let’s switch places
