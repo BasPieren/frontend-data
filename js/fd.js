@@ -1633,10 +1633,16 @@ svg
   .attr('height', d => y(0) - y(d.value))
   .attr('width', x.bandwidth())
   .attr('fill', d => rectColor(d.value))
-  .on("mouseover", function(d) {
-    d3.select(this).attr("rect", 10).transition().attr("opacity", "0.5")
+  .on('mouseover', function(d) {
+    d3.select(this)
+      .attr('rect', 10)
+      .transition()
+      .attr('opacity', '0.5')
   })
-  .on("mouseout", function(d) {
-    d3.select(this).attr("rect", 10).transition().attr("opacity", "1")
-  });
+  .on('mouseout', function(d) {
+    d3.select(this)
+      .attr('rect', 10)
+      .transition()
+      .attr('opacity', '1')
+  })
 //.attr('fill', d => dotColor(d.pages))
