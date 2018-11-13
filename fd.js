@@ -1,3 +1,8 @@
+/* ------ SOURCES
+https://beta.observablehq.com/@mbostock/d3-bar-chart
+http://www.shanegibney.com/shanegibney/d3-js-v4-count-values-in-an-object/
+------ */
+
 var dataArray = [
   {
     TITEL:
@@ -1543,6 +1548,18 @@ var dataFilter = dataArray
   .sort((a, b) => a.YEAR - b.YEAR)
   .map(({ YEAR, PAGES }) => ({ year: YEAR, pages: PAGES }))
 
+// START USE OF SOURCE: http://www.shanegibney.com/shanegibney/d3-js-v4-count-values-in-an-object/
+var dataCount = d3
+  .nest()
+  .key(function(d) {
+    return d.year
+  })
+  .rollup(function(leaves) {
+    return leaves.length
+  })
+  .entries(dataFilter)
+// END USE OF SOURCE
+
 var height = 500
 
 var width = 1000
@@ -1553,11 +1570,11 @@ var x = d3
   .scaleBand()
   .domain(dataFilter.map(d => d.year))
   .range([margin.left, width - margin.right])
-  .padding(1)
+  .padding(0.1)
 
 var y = d3
   .scaleLinear()
-  .domain([0, d3.max(dataFilter, d => d.pages)])
+  .domain([0, d3.max(dataCount, d => d.value)])
   .nice()
   .range([height - margin.bottom, margin.top])
 
@@ -1565,44 +1582,16 @@ var xAxis = g =>
   g
     .attr('transform', `translate(0,${height - margin.bottom})`)
     .call(d3.axisBottom(x).tickSizeOuter(0))
-    .call(g =>
-      g
-        .append('text')
-        .attr('x', width - margin.right)
-        .attr('y', -4)
-        .attr('fill', '#000')
-        .attr('font-weight', 'bold')
-        .attr('text-anchor', 'end')
-        .text('Year of publication')
-    )
 
 var yAxis = g =>
-  g
-    .attr('transform', `translate(${margin.left},0)`)
-    .call(
-      d3.axisLeft(y).tickValues(
-        d3
-          .scaleLinear()
-          .domain(y.domain())
-          .ticks()
-      )
+  g.attr('transform', `translate(${margin.left},0)`).call(
+    d3.axisLeft(y).tickValues(
+      d3
+        .scaleLinear()
+        .domain(y.domain())
+        .ticks()
     )
-    .call(g =>
-      g
-        .selectAll('.tick line')
-        .clone()
-        .attr('stroke-opacity', 0.1)
-        .attr('x2', width - margin.left - margin.right)
-    )
-    .call(g =>
-      g
-        .select('.tick:last-of-type text')
-        .clone()
-        .attr('x', 4)
-        .attr('text-anchor', 'start')
-        .attr('font-weight', 'bold')
-        .text('Number of pages')
-    )
+  )
 
 var dotColor = d3
   .scaleLinear()
@@ -1616,24 +1605,20 @@ var dotColor = d3
 
 var svg = d3.select('svg')
 
-svg
-  .attr('width', width)
-  .attr('height', height)
+svg.attr('width', width).attr('height', height)
 
-svg
-  .append('g')
-  .call(xAxis)
-  .attr('stroke-width', 2)
+svg.append('g').call(xAxis)
 
 svg.append('g').call(yAxis)
 
 svg
   .append('g')
-  .selectAll('circle')
-  .data(dataFilter)
+  .selectAll('rect')
+  .data(dataCount)
   .enter()
-  .append('circle')
-  .attr('cx', d => x(d.year))
-  .attr('cy', d => y(d.pages))
-  .attr('r', 5)
+  .append('rect')
+  .attr('x', d => x(d.key))
+  .attr('y', d => y(d.value))
+  .attr('height', d => y(0) - y(d.value))
+  .attr('width', x.bandwidth())
   .attr('fill', d => dotColor(d.pages))
