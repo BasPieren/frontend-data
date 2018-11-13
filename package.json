@@ -4,7 +4,7 @@
   "description": "This is the repo for my frontend data project.",
   "main": "index.js",
   "scripts": {
-    "prjs": "prettier --single-quote --no-semi --write index.js"
+    "prjs": "prettier --single-quote --no-semi --write *.js"
   },
   "repository": {
     "type": "git",
