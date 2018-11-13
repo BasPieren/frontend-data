@@ -1,10 +1,8 @@
 /* ------ SOURCES
-
 https://github.com/rijkvanzanten/node-oba-api
 https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
 Martijn Reeuwijk
 Laurens
-
 ------ */
 
 require('dotenv').config()
