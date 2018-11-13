@@ -1,17 +1,27 @@
 {
   "name": "frontend-data",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the repo for my frontend data project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prjs": "prettier --single-quote --no-semi --write index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BasPieren/frontend-data.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BasPieren/frontend-data/issues"
+  },
+  "homepage": "https://github.com/BasPieren/frontend-data#readme",
   "dependencies": {
     "dotenv": "^6.1.0",
-    "oba-api": "github:rijkvanzanten/node-oba-api",
+    "oba-api": "github:rijkvanzanten/node-oba-api"
+  },
+  "devDependencies": {
     "prettier": "^1.15.2"
   }
 }
