@@ -8,7 +8,6 @@ This is the repo for my frontend data project.
 * [Installing](#installing-)
   * [Packages and technologies](#packages-and-technologies)
 * [Research](#research-)
-  * [Sketches](#sketches)
 * [Transform Data](#Transform-data-)  
 * [Observable](#observable-)
 * [Sources](#sources-)
@@ -24,7 +23,7 @@ This is a list of things in want to do in this project:
 - [ ] The way the student applies subject matter is more advanced than what they were taught in class; let’s switch places
 
 ## Description 📝
-
+During this project I used the d3 javascript library to make a interactive data presentation using data from the OBA API. I looked for interesting patterns of books about World War II.
 
 ## Installing 🔍
 To install this application enter the following into your terminal:
@@ -48,17 +47,19 @@ This project makes use of the following packages and technologies:
 
 ## Research 📑
 
-### Sketches
-![Wireframe](images/HvA_FD_Wireframe_Data_Visualisatie.jpg)
 
 ## Observable 📊
 
 
 ## Sources 📚
-
+* [OBA API](https://zoeken.oba.nl/api/v1/)
+* [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
+* [Code provided by Laurens](https://github.com/Razpudding)
 
 ### Honourable Mentions
-
+* [Readme by Daniel van de Velde](https://github.com/DanielvandeVelde/functional-programming/blob/master/README.md)
+* [Code provided by Martijn Reeuwijk](https://github.com/MartijnReeuwijk)
+* [Code provided by Jesse Dijkman](https://github.com/jesseDijkman1)
 
 ## Licence 🔓
 MIT © [Bas Pieren](https://github.com/BasPieren)
