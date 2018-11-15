@@ -9,7 +9,6 @@ This is the repo for my frontend data project.
   * [Packages and technologies](#packages-and-technologies)
 * [Research](#research-)
 * [Transform Data](#Transform-data-)  
-* [Observable](#observable-)
 * [Sources](#sources-)
   * [Honourable Mentions](#honourable-mentions)
 * [Licence](#licence-)
@@ -46,9 +45,6 @@ This project makes use of the following packages and technologies:
 * [prettier](https://www.npmjs.com/package/prettier)
 
 ## Research 📑
-
-
-## Observable 📊
 
 
 ## Sources 📚
