@@ -8,6 +8,7 @@ This is the repo for my frontend data project.
 * [Installing](#installing-)
   * [Packages and technologies](#packages-and-technologies)
 * [Research](#research-)
+  * [Sketches](#sketches)
 * [Transform Data](#Transform-data-)  
 * [Observable](#observable-)
 * [Sources](#sources-)
@@ -47,6 +48,8 @@ This project makes use of the following packages and technologies:
 
 ## Research 📑
 
+### Sketches
+![Wireframe](images/HvA_FD_Wireframe_Data_Visualisatie.jpg)
 
 ## Observable 📊
 
