@@ -2,6 +2,7 @@
 https://github.com/rijkvanzanten/node-oba-api
 https://stackoverflow.com/questions/16470113/how-to-return-part-of-string-after-a-certain-character
 Martijn Reeuwijk
+Jesse Dijkman
 Laurens
 ------ */
 
@@ -27,11 +28,16 @@ const client = new OBA({
 // Example search to the word 'rijk' sorted by title:
 client
   .get('search', {
-    q: 'Wereld-Oorlog',
+    q: 'Wereldoorlog',
     refine: true,
     sort: 'year',
-    facet: 'type(book)',
-    page: 1 // 338 t/m 329
+    facet: [
+      'type(book)',
+      'language(dut)',
+      'topic(Wereldoorlog II)',
+      'pubYearRange(5_OlderThan50)'
+    ],
+    page: 1
   })
   // END USE OF SOURCE
 
@@ -44,31 +50,39 @@ client
   .catch(err => console.log(err)) // Something went wrong in the request to the API
 
 function getData(data) {
-  // START USE OF SOURCE: Martijn Reeuwijk & Laurens
+  // START USE OF SOURCE: Martijn Reeuwijk, Jesse Dijkman & Laurens
   let dataStore = data.aquabrowser.results.result.map(e => {
     return {
-      TITLE: e.titles
-        ? e.titles['short-title']['$t']
+      title: e.titles
+        ? e.titles['short-title']
+          ? e.titles['short-title'].$t
+          : 'No $t-titel'.toUpperCase()
         : 'No titel'.toUpperCase(),
-      YEAR: e.publication
-        ? parseInt(e.publication.year['$t'], 10)
+      year: e.publication
+        ? e.publication.year
+          ? parseInt(e.publication.year.$t, 10)
+          : 'No $t-year'.toUpperCase()
         : 'No year'.toUpperCase(),
-      AUTHOR: e.authors
-        ? e.authors['main-author']['$t']
-        : 'No writer'.toUpperCase(),
-      GENRE: e.genres ? e.genres.genre['$t'] : 'No genre'.toUpperCase(),
-      DESCRIPTION: e.summaries
-        ? e.summaries.summary['$t']
+      author: e.authors
+        ? e.authors['main-author']
+          ? e.authors['main-author'].$t
+          : 'No $t-author'.toUpperCase()
+        : 'No author'.toUpperCase(),
+      description: e.summaries
+        ? e.summaries.summary
+          ? e.summaries.summary.$t
+          : 'No $t-description'.toUpperCase()
         : 'No description'.toUpperCase(),
-      PAGES: e.description
-        ? parseInt(
-            e.description['physical-description']['$t']
-              .match(/\d+/g)
-              .map(Number),
-            10
-          )
-        : 0,
-      KIND: e.formats ? e.formats.format['$t'] : 'No kind'.toUpperCase()
+      pages: e.description
+        ? e.description['physical-description']
+          ? parseInt(
+              e.description['physical-description'].$t
+                .match(/\d+/g)
+                .map(Number),
+              10
+            )
+          : 0
+        : 'No physical description'.toUpperCase()
     }
   })
   console.log(dataStore)
