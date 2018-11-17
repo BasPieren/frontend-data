@@ -7,7 +7,7 @@ This is the repo for my frontend data project.
 * [Description](#description-)
 * [Installing](#installing-)
   * [Packages and technologies](#packages-and-technologies)
-* [Research](#research-) 
+* [Research](#research-)
 * [Sources](#sources-)
   * [Honourable Mentions](#honourable-mentions)
 * [Licence](#licence-)
@@ -42,6 +42,8 @@ This project makes use of the following packages and technologies:
 * [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [prettier](https://www.npmjs.com/package/prettier)
+* [file-system](https://www.npmjs.com/package/file-system)
+* [prettyjson](https://www.npmjs.com/package/prettyjson)
 
 ## Research 📑
 
@@ -53,7 +55,6 @@ This project makes use of the following packages and technologies:
 
 ### Honourable Mentions
 * [Readme by Daniel van de Velde](https://github.com/DanielvandeVelde/functional-programming/blob/master/README.md)
-* [Code provided by Martijn Reeuwijk](https://github.com/MartijnReeuwijk)
 * [Code provided by Jesse Dijkman](https://github.com/jesseDijkman1)
 
 ## Licence 🔓
