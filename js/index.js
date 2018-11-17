@@ -33,7 +33,6 @@ client
     sort: 'year',
     facet: [
       'type(book)',
-      'language(dut)',
       'topic(Wereldoorlog II)',
       'pubYearRange(5_OlderThan50)'
     ],
@@ -73,6 +72,11 @@ function getData(data) {
           ? e.summaries.summary.$t
           : 'No $t-description'.toUpperCase()
         : 'No description'.toUpperCase(),
+      language: e.languages
+        ? e.languages.language
+          ? e.languages.language.$t
+          : 'No $t-language'.toUpperCase()
+        : 'No language'.toUpperCase(),
       pages: e.description
         ? e.description['physical-description']
           ? parseInt(
