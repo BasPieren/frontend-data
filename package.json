@@ -24,7 +24,6 @@
     "oba-api": "github:rijkvanzanten/node-oba-api"
   },
   "devDependencies": {
-    "prettier": "^1.15.2",
-    "prettyjson": "^1.2.1"
+    "prettier": "^1.15.2"
   }
 }
