@@ -89,7 +89,7 @@ function filterData(data) {
   return dataStore
 }
 
-function writeData(data) {
+function appendData(data) {
   var filteredData = filterData(data)
   // START USE OF SOURCE: Sterre van Geest
   let dataStoreString = JSON.stringify(filteredData)
@@ -104,5 +104,5 @@ function getData(data) {
   var filteredData = filterData(data)
   console.log(filteredData)
 
-  writeData(data)
+  appendData(data)
 }
