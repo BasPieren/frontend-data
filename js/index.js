@@ -19,7 +19,8 @@ const client = new OBA({
 
 client
   .get('search', {
-    rctx: 'AWNkYOZmYGcwrEorS801zTXOLSvMNEyqMEoqN6wyzkpOZWZk4MxNzMxjZGYQT8svyk0ssUrKz8@mBBGMzNKZ8UWpycUFqUUFiemprEYGTAwXQm4Z3DJgalvEyKixTIJ5gwUDA3t$UiIDA2dlamKRon5Rfn6Jfk5mYWlmij5QnL20KIeBNS$HEQA',
+    rctx:
+      'AWNkYOZmYGcwrEorS801zTXOLSvMNEyqMEoqN6wyzkpOZWZk4MxNzMxjZGYQT8svyk0ssUrKz8@mBBGMzNKZ8UWpycUFqUUFiemprEYGTAwXQm4Z3DJgalvEyKixTIJ5gwUDA3t$UiIDA2dlamKRon5Rfn6Jfk5mYWlmij5QnL20KIeBNS$HEQA',
     q: 'format:book',
     refine: true,
     sort: 'year',
@@ -32,11 +33,12 @@ client
   .then(result => {
     let keys = getData(result)
   })
+  // END USE OF SOURCE: Laurens Aarnoudse
 
   .catch(err => console.log(err))
 // END USE OF SOURCE: https://github.com/rijkvanzanten/node-oba-api
 
-function getData(data) {
+function filterData(data) {
   let apiResult = data.aquabrowser.results.result
   let dataStore = apiResult.map(e => {
     // START USE OF SOURCE: Jesse Dijkman
@@ -84,13 +86,23 @@ function getData(data) {
     }
     // END USE OF SOURCE: Jesse Dijkman
   })
+  return dataStore
+}
+
+function writeData(data) {
+  var filteredData = filterData(data)
   // START USE OF SOURCE: Sterre van Geest
-  let dataStoreString = JSON.stringify(dataStore)
+  let dataStoreString = JSON.stringify(filteredData)
 
   fs.appendFile('data/data.json', dataStoreString, err => {
     if (err) throw err
   })
   // END USE OF SOURCE: Sterre van Geest
-  console.log(dataStore)
-  // END USE OF SOURCE: Laurens Aarnoudse
+}
+
+function getData(data) {
+  var filteredData = filterData(data)
+  console.log(filteredData)
+
+  writeData(data)
 }
