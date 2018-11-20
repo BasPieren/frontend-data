@@ -2,3 +2,29 @@
   margin: 0;
   padding: 0;
 }
+
+h1{
+  margin: 0.5em 0 0 0.5em;
+  font-family:  system-ui, sans-serif;
+}
+
+section{
+  padding: 1.1em;
+}
+
+section > div {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+section > div:first-child {
+  margin-left: 0;
+}
+
+section > div:last-child {
+  margin-right: 0;
+}
+
+section > div > label{
+  font-family:  system-ui, sans-serif;
+}
