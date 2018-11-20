@@ -76,7 +76,7 @@ var dataArray = [
     "year": 1969,
     "author": "van der Neut, E.M.",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 51
   },
   {
@@ -163,7 +163,7 @@ var dataArray = [
     "year": 1968,
     "author": "Leiker, Sjoerd",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 164
   },
   {
@@ -187,7 +187,7 @@ var dataArray = [
     "year": 1968,
     "author": "Olivier, H.M.L.(mdw.).",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 118
   },
   {
@@ -251,7 +251,7 @@ var dataArray = [
     "year": 1967,
     "author": "Kuznecov, Anatolij Vasil'evic",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 292
   },
   {
@@ -259,7 +259,7 @@ var dataArray = [
     "year": 1967,
     "author": "Lanzmann, Jacques",
     "description": "INHOUD: De tragische geschiedenis van een Joodse jongen die vlucht voor de Duitse bezetter en daarbij telkens weer in handen van andere belagers belandt",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 140
   },
   {
@@ -403,7 +403,7 @@ var dataArray = [
     "year": 1965,
     "author": "Maybaum, Ignaz",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "eng",
     "pages": 265
   },
   {
@@ -427,7 +427,7 @@ var dataArray = [
     "year": 1965,
     "author": "Polak, L.Ph.(mdw.).",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 173
   },
   {
@@ -451,7 +451,7 @@ var dataArray = [
     "year": 1965,
     "author": "Herlin, Hans",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 192
   },
   {
@@ -483,7 +483,7 @@ var dataArray = [
     "year": 1965,
     "author": "Moore, Henry",
     "description": "INHOUD: Schetsen van de Engelse beeldhouwer, gemaakt tijdens zijn verblijf in schuilkelders tijdens luchtaanvallen op Engeland in de Tweede Wereldoorlog",
-    "language": "NO LANGUAGE",
+    "language": "eng",
     "pages": 81
   },
   {
@@ -546,7 +546,7 @@ var dataArray = [
     "year": 1964,
     "author": "Vittorini, Elio",
     "description": "INHOUD: Verzetsroman spelend in Milaan gedurende de tweede wereldoorlog onder een groep onheroïsche partizanen, waarvan de leider steeds weer geconfronteerd wordt met het onmenselijke van de oorlog",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 200
   },
   {
@@ -554,7 +554,7 @@ var dataArray = [
     "year": 1964,
     "author": "Meri, Veijo",
     "description": "INHOUD: Tijdens de tweede wereldoorlog zit in een trein met Finse verlofgangers een soldaat, die ten koste van alles wil verhinderen dat een door hem gevonden stuk touw in handen valt van de inspecterende Duitse militaire politie",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 144
   },
   {
@@ -666,7 +666,7 @@ var dataArray = [
     "year": 1962,
     "author": "de Jong, L.",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 157
   },
   {
@@ -913,7 +913,7 @@ var dataArray = [
     "year": 1960,
     "author": "Toonder, Jan Gerhard",
     "description": "INHOUD: Roman over mensen en gebeurtenissen onder de Duitse bezetting in Nederland",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 192
   },
   {
@@ -921,7 +921,7 @@ var dataArray = [
     "year": 1960,
     "author": "Liedel, Frank",
     "description": "INHOUD: Een jong meisje, dat tijdens de 2e wereldoorlog zich bij een verzetsgroep aansluit, vormt tegen haar wil de aanleding tot het optreden van spanningen tussen de mensen onderling",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 72
   },
   {
@@ -944,7 +944,7 @@ var dataArray = [
     "year": 1959,
     "author": "Koelewijn, L.A.",
     "description": "INHOUD: In de tropen spelende verhalen over de tweede wereldoorlog",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 88
   },
   {
@@ -976,7 +976,7 @@ var dataArray = [
     "year": 1959,
     "author": "Visser, Ab",
     "description": "INHOUD: Gewetensconflict van de twijfelende ik-figuur tijdens de Duitse bezetting",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 143
   },
   {
@@ -984,7 +984,7 @@ var dataArray = [
     "year": 1959,
     "author": "Vuyk, Beb",
     "description": "INHOUD: Verhalen over Indië tijdens de Japanse bezetting",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 110
   },
   {
@@ -1280,7 +1280,7 @@ var dataArray = [
     "year": 1953,
     "author": "Nolthenius, Helene",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 135
   },
   {
@@ -1504,7 +1504,7 @@ var dataArray = [
     "year": 1949,
     "author": "de Vries, Theun",
     "description": "INHOUD: De signalering tijdens de Tweede Wereldoorlog van een mysterieus hert in de Belgische Ardennen prikkelt diverse jagers, onder wie ook enkele Duitse bezetters",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 31
   },
   {
@@ -1632,7 +1632,7 @@ var dataArray = [
     "year": 1948,
     "author": "Norel, K.",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 276
   },
   {
@@ -1664,7 +1664,7 @@ var dataArray = [
     "year": 1947,
     "author": "Kent, William",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "eng",
     "pages": 150
   },
   {
@@ -1704,7 +1704,7 @@ var dataArray = [
     "year": 1947,
     "author": "Curie, Ève",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 585
   },
   {
@@ -1712,7 +1712,7 @@ var dataArray = [
     "year": 1947,
     "author": "Lynx, J.J.",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 207
   },
   {
@@ -1840,7 +1840,7 @@ var dataArray = [
     "year": 1946,
     "author": "Blase, F.W.(mdw.).",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 277
   },
   {
@@ -1864,7 +1864,7 @@ var dataArray = [
     "year": 1946,
     "author": "Churchill, Winston",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "eng",
     "pages": 271
   },
   {
@@ -1904,7 +1904,7 @@ var dataArray = [
     "year": 1946,
     "author": "Low, David",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "eng",
     "pages": 320
   },
   {
@@ -1936,7 +1936,7 @@ var dataArray = [
     "year": 1946,
     "author": "Nijhoff, A.H.",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 119
   },
   {
@@ -1952,7 +1952,7 @@ var dataArray = [
     "year": 1946,
     "author": "van Rijswijck, Antoon Petrus Henricus",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 132
   },
   {
@@ -2048,7 +2048,7 @@ var dataArray = [
     "year": 1945,
     "author": "Grondel, Harold (mdw.).",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 87
   },
   {
@@ -2184,7 +2184,7 @@ var dataArray = [
     "year": 1945,
     "author": "Newton, Eric (mdw.).",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "eng",
     "pages": 96
   },
   {
@@ -2336,7 +2336,7 @@ var dataArray = [
     "year": 1942,
     "author": "Topolski, Feliks",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "eng",
     "pages": 128
   },
   {
@@ -2360,7 +2360,7 @@ var dataArray = [
     "year": 1941,
     "author": "van Kleffens, Eelco Nicolaas",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 213
   },
   {
@@ -2388,10 +2388,11 @@ var dataArray = [
     "pages": 157
   },
   {
+    "title": "Onze oorlog, 10-14 Mei 1940 : verzameling van publicaties van de Krijgskundige Sectie van het Hoofdregelingsbureau en andere artikelen",
     "year": 1941,
     "author": "NO AUTHOR",
     "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
+    "language": "dut",
     "pages": 263
   },
   {
@@ -2417,21 +2418,5 @@ var dataArray = [
     "description": "NO DESCRIPTION",
     "language": "dut",
     "pages": 53
-  },
-  {
-    "title": "Herinneringsboekje aan het verblijf in Nederland tijdens den wereldoorlog 1914-1919",
-    "year": 1919,
-    "author": "Wilhelm Christian Georg Rueter",
-    "description": "NO DESCRIPTION",
-    "language": "dut",
-    "pages": 8
-  },
-  {
-    "title": "The war : depicted by distinguished British artists",
-    "year": 1918,
-    "author": "Holme, Charles (mdw.).",
-    "description": "NO DESCRIPTION",
-    "language": "NO LANGUAGE",
-    "pages": 98
   }
 ]
