@@ -28,3 +28,8 @@ section > div:last-child {
 section > div > label{
   font-family:  system-ui, sans-serif;
 }
+
+section > button{
+  margin: 0 0 0 2.2em;
+  padding: 0.5em;
+}
