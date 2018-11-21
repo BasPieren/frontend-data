@@ -175,7 +175,7 @@ function getData(data) {
   appendData(data)
 }
 ```
-I knew that there were 16 pages with books. By manualy changing the page number and running the code I was able to write all the pages to the data.json file. This wouldn't be practical at all if I had more pages. If I had more time I would make sure to fix this.
+I knew that there were 16 pages with books. By manualy changing the page number and running the code I was able to write all the data from each page to the data.json file. This wouldn't really be practical if there where a lot more pages. If I had more time I would make sure to fix this.
 
 ## Sources 📚
 * [OBA API](https://zoeken.oba.nl/api/v1/)
