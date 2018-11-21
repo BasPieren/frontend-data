@@ -9,7 +9,7 @@ This is the repo for my frontend data project.
 * [Description](#description-)
 * [Installing](#installing-)
   * [Packages and technologies](#packages-and-technologies)
-* [Research / Concepting](#research-/-concepting)
+* [Research and concepting](#research-and-concepting)
   * [Sketches](#sketches)
 * [Transform Data](#Transform-data-)
 * [Sources](#sources-)
@@ -48,8 +48,8 @@ This project makes use of the following packages and technologies:
 * [prettier](https://www.npmjs.com/package/prettier)
 * [file-system](https://www.npmjs.com/package/file-system)
 
-## Research / Concepting 📑
-This is the research / concepting work I have done in the first week. I wanted to continue with the concept of using books that where published during World War II.
+## Research and concepting 📑
+This is the research and concepting work I have done in the first week. I wanted to continue with the concept of using books that where published during World War II.
 
 ### Sketches
 
