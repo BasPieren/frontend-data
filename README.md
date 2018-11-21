@@ -160,7 +160,7 @@ function filterData(data) {
   return dataStore
 }
 ```
-This function writes the data from the `filteredData` function to a data.json file.
+This function writes the data from the `filterData` function to a data.json file.
 ```js
 function appendData(data) {
   var filteredData = filterData(data)
