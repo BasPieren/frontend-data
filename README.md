@@ -76,6 +76,107 @@ I also refined the vizualisation into a wireframe.
 ## Transform data 🛠
 Here I will explain the important parts on how I transformed my data.
 
+_NOTE: The complete code can be found in index.js._
+
+First I installed the [node-oba-api](https://github.com/rijkvanzanten/node-oba-api) made by [Rijk van Zanten](https://github.com/rijkvanzanten) so I could more easily interface with the [OBA API](https://zoeken.oba.nl/api/v1/).
+
+After the installation I modified the `.get` request with some extra parameters to narrow down the books that I would get back.
+
+* `q`: Q allows me to only get books back.
+* `refine`: Refine allows me to get more information on a book like genre and type.
+* `sort`: Sort allows me to sort the books based on their publication year.
+* `facet`: Facet allows me to only get books that have Wereldoorlog II as topic and where published before 1969.
+* `page`: Page allows me to navigate trough all the available pages.
+
+```js
+client
+  .get('search', {
+    rctx:
+      'AWNkYOZmYGcwrEorS801zTXOLSvMNEyqMEoqN6wyzkpOZWZk4MxNzMxjZGYQT8svyk0ssUrKz8@mBBGMzNKZ8UWpycUFqUUFiemprEYGTAwXQm4Z3DJgalvEyKixTIJ5gwUDA3t$UiIDA2dlamKRon5Rfn6Jfk5mYWlmij5QnL20KIeBNS$HEQA',
+    q: 'format:book',
+    refine: true,
+    sort: 'year',
+    facet: ['topic(Wereldoorlog II)', 'pubYearRange(5_OlderThan50)'],
+    page: 1
+  })
+```
+Then I wrote three functions that would give me back the correct data. This function maps over the data from the OBA API and saves it inside a new array called `dataStore`. For every book it returns the title, year, author, description, language and pages. For every property I looks if there is a value and, if there is none, replace it with something else. I also made sure that the year and pages would be parsed to be a number instead of a string. We then return `dataStore`.
+```js
+function filterData(data) {
+  let apiResult = data.aquabrowser.results.result
+  let dataStore = apiResult.map(e => {
+    // START USE OF SOURCE: Jesse Dijkman
+    return {
+      title: e.titles
+        ? e.titles['short-title']
+          ? e.titles['short-title'].$t
+          : 'No $t-titel'.toUpperCase()
+        : 'No titel'.toUpperCase(),
+
+      year: e.publication
+        ? e.publication.year
+          ? parseInt(e.publication.year.$t, 10)
+          : 'No $t-year'.toUpperCase()
+        : 'No year'.toUpperCase(),
+
+      author: e.authors
+        ? e.authors['main-author']
+          ? e.authors['main-author'].$t
+          : 'No $t-author'.toUpperCase()
+        : 'No author'.toUpperCase(),
+
+      description: e.summaries
+        ? e.summaries.summary
+          ? e.summaries.summary.$t
+          : 'No $t-description'.toUpperCase()
+        : 'No description'.toUpperCase(),
+
+      language: e.languages
+        ? e.languages.language
+          ? e.languages.language.$t
+          : 'No $t-language'.toUpperCase()
+        : 'No language'.toUpperCase(),
+
+      pages: e.description
+        ? e.description['physical-description']
+          ? parseInt(
+              e.description['physical-description'].$t
+                .match(/\d+/g)
+                .map(Number),
+              10
+            )
+          : 0
+        : 'No physical description'.toUpperCase()
+    }
+    // END USE OF SOURCE: Jesse Dijkman
+  })
+  return dataStore
+}
+```
+This function writes the data from the `filteredData` function to a data.json file.
+```js
+function appendData(data) {
+  var filteredData = filterData(data)
+  // START USE OF SOURCE: Sterre van Geest
+  let dataStoreString = JSON.stringify(filteredData)
+
+  fs.appendFile('data/data.json', dataStoreString, err => {
+    if (err) throw err
+  })
+  // END USE OF SOURCE: Sterre van Geest
+}
+```
+The last fucntion is uses `console.log` to show the data inside the terminal and calls the `appendData` function.
+```js
+function getData(data) {
+  var filteredData = filterData(data)
+  console.log(filteredData)
+
+  appendData(data)
+}
+```
+I knew that there were 16 pages with books. By manualy changing the page number and running the code I was able to write all the pages to the data.json file. This wouldn't be practical at all if I had more pages. If I had more time I would make sure to fix this.
+
 ## Sources 📚
 * [OBA API](https://zoeken.oba.nl/api/v1/)
 * [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
