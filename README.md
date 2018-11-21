@@ -67,7 +67,9 @@ First I though about giving each language a separate line chart and giving the u
 
 ![Pagina 5 schetsen](images/schetsen_Page_2.jpg)
 
-Here I combined all separate line charts into one chart and added checkboxes to give the user the option to display the amount of books per different languages as a line on the chart. Then the user would also have the option to see the details of a language in a scatterplot that would show all the separate books with on the x-Axis the publication year and on the y-Axis the number of pages a book would have. The user could than click on a book, or dot, and a tooltip would pop up that would display information about that book. I also refined the vizualisation into a wireframe.
+Here I combined all separate line charts into one chart and added checkboxes to give the user the option to display the amount of books per different languages as a line on the chart. Then the user would also have the option to see the details of a language in a scatterplot that would show all the separate books with on the x-Axis the publication year and on the y-Axis the number of pages a book would have. The user could than click on a book, or dot, and a tooltip would pop up that would display information about that book.
+
+I also refined the vizualisation into a wireframe.
 
 ![Wireframe](images/HvA_FD_Wireframe_Data_Visualisatie.jpg)
 
