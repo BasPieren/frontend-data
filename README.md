@@ -2,6 +2,8 @@
 
 This is the repo for my frontend data project.
 
+![Frontend Data Screenshot](images/frontend-data-screenshot.png)
+
 ## Table of Contents 🗃
 * [To Do](#to-do-)
 * [Description](#description-)
