@@ -56,9 +56,7 @@ This is the research / concepting work I have done in the first week or so. I wa
 I started making multiple sketches with ideas of how I wanted my data visualisation to look:
 
 ![Pagina 1 schetsen](images/schetsen_Page_1.jpg)
-
 ![Pagina 2 schetsen](images/schetsen_Page_5.jpg)
-
 ![Pagina 3 schetsen](images/schetsen_Page_4.jpg)
 
 I was playing around with the idea of having a graph transform into a different graph when clicking on something. I wasn't to sure about what data to use yet. After I got some feedback from [Laurens](https://github.com/Razpudding) I started thinking about using the different languages of books.
