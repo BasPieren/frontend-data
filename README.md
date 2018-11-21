@@ -49,7 +49,7 @@ This project makes use of the following packages and technologies:
 * [file-system](https://www.npmjs.com/package/file-system)
 
 ## Research / Concepting 📑
-This is the research / concepting work I have done in the first week or so. I wanted to continue with the concept op using books that where published during the second world war.
+This is the research / concepting work I have done in the first week. I wanted to continue with the concept of using books that where published during World War II.
 
 ### Sketches
 
@@ -59,17 +59,17 @@ I started making multiple sketches with ideas of how I wanted my data visualisat
 ![Pagina 2 schetsen](images/schetsen_Page_5.jpg)
 ![Pagina 3 schetsen](images/schetsen_Page_4.jpg)
 
-I was playing around with the idea of having a graph transform into a different graph when clicking on something. I wasn't to sure about what data to use yet. After I got some feedback from [Laurens](https://github.com/Razpudding) I started thinking about using the different languages of books.
+I was playing around with the idea of having a gdata raph transform into a different type of data graph when clicking on an element. I wasn't to sure about what data to use yet. After I got some feedback from [Laurens](https://github.com/Razpudding) I started thinking about using the different languages of books.
 
 ![Pagina 4 schetsen](images/schetsen_Page_3.jpg)
 
-First I though about giving each language a separate line chart and giving the user the option to sort them between books from world war 1 and the second world war and show the amount of books that where published each year between a certain timespan that the user would also be able to select. I found that the idea became a bit messy so I decided to streamline it.  
+First I though about giving each language a separate line chart and giving the user the option to sort them between the topics World War I and World War II and show the amount of books that where published each year between a certain timespan that the user would also be able to select. I found that the idea became a bit messy so I decided to streamline it.  
 
 ![Pagina 5 schetsen](images/schetsen_Page_2.jpg)
 
-Here I combined all separate line charts into one chart and added checkboxes to give the user the option to display the amount of books per different languages as a line on the chart. Then the user would also have the option to see the details of a language in a scatterplot that would show all the separate books with on the x-Axis the publication year and on the y-Axis the number of pages a book would have. The user could than click on a book, or dot, and a tooltip would pop up that would display information about that book.
+Here I combined all separate line charts into one chart and added checkboxes to give the user the option to display the amount of books per different languages as a line on the chart. Then the user would also have the option to see the details of a language in a scatterplot that would show all the separate books with on the x-Axis the publication year and on the y-Axis the number of pages a book would have. The user could then click on a dot and a tooltip would pop up that would display information about that book.
 
-I also refined the vizualisation into a wireframe.
+I also refined the visualisation into a wireframe.
 
 ![Wireframe](images/HvA_FD_Wireframe_Data_Visualisatie.jpg)
 
@@ -175,7 +175,7 @@ function getData(data) {
   appendData(data)
 }
 ```
-I knew that there were 16 pages with books. By manualy changing the page number and running the code I was able to write all the data from each page to the data.json file. This wouldn't really be practical if there where a lot more pages. If I had more time I would make sure to fix this.
+I knew that there were 16 pages with books. By manualy changing the page number and running the code I was able to write all the data from each page to the `data.json` file. This wouldn't really be practical if there where a lot more pages. If I had more time I would make sure to fix this.
 
 ## Sources 📚
 * [OBA API](https://zoeken.oba.nl/api/v1/)
