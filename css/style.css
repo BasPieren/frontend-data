@@ -33,3 +33,9 @@ section > button{
   margin: 0 0 0 2.2em;
   padding: 0.5em;
 }
+
+.linePath{
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
