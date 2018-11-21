@@ -57,8 +57,10 @@ I started making multiple sketches with ideas of how I wanted my data visualisat
 
 ![Pagina 1 schetsen](images/schetsen_Page_1.jpg)
 > Sketch 1
+
 ![Pagina 2 schetsen](images/schetsen_Page_5.jpg)
 > Sketch 2
+
 ![Pagina 3 schetsen](images/schetsen_Page_4.jpg)
 > Sketch 3
 
