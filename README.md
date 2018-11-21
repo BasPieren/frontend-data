@@ -9,7 +9,9 @@ This is the repo for my frontend data project.
 * [Description](#description-)
 * [Installing](#installing-)
   * [Packages and technologies](#packages-and-technologies)
-* [Research](#research-)
+* [Research / Concepting](#research-/-concepting)
+  * [Sketches](#sketches)
+* [Transform Data](#Transform-data-)
 * [Sources](#sources-)
   * [Honourable Mentions](#honourable-mentions)
 * [Licence](#licence-)
@@ -18,7 +20,7 @@ This is the repo for my frontend data project.
 This is a list of things in want to do in this project:
 - [X] Git, npm, and d3 are used; the project runs without errors; data is loaded with d3; there is a representation of data
 - [X] Data is rendered with d3; interpreting the representation is easier that interpreting the data itself
-- [ ] d3 is used to clean data and make an interactive representation; Data is transformed
+- [X] d3 is used to clean data and make an interactive representation; Data is transformed
 - [ ] Representation and use of a d3 go beyond an example: there are demonstrable additions like well-chosen interaction methods
 - [ ] The way the student applies subject matter is more advanced than what they were taught in class; let’s switch places
 
@@ -45,19 +47,47 @@ This project makes use of the following packages and technologies:
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [prettier](https://www.npmjs.com/package/prettier)
 * [file-system](https://www.npmjs.com/package/file-system)
-* [prettyjson](https://www.npmjs.com/package/prettyjson)
 
-## Research 📑
+## Research / Concepting 📑
+This is the research / concepting work I have done in the first week or so. I wanted to continue with the concept op using books that where published during the second world war.
 
+### Sketches
+
+I started making multiple sketches with ideas of how I wanted my data visualisation to look:
+
+![Pagina 1 schetsen](images/schetsen_Page_1.jpg)
+
+![Pagina 2 schetsen](images/schetsen_Page_5.jpg)
+
+![Pagina 3 schetsen](images/schetsen_Page_4.jpg)
+
+I was playing around with the idea of having a graph transform into a different graph when clicking on something. I wasn't to sure about what data to use yet. After I got some feedback from [Laurens](https://github.com/Razpudding) I started thinking about using the different languages of books.
+
+![Pagina 4 schetsen](images/schetsen_Page_3.jpg)
+
+First I though about giving each language a separate line chart and giving the user the option to sort them between books from world war 1 and the second world war and show the amount of books that where published each year between a certain timespan that the user would also be able to select. I found that the idea became a bit messy so I decided to streamline it.  
+
+![Pagina 5 schetsen](images/schetsen_Page_2.jpg)
+
+Here I combined all separate line charts into one chart and added checkboxes to give the user the option to display the amount of books per different languages as a line on the chart. Then the user would also have the option to see the details of a language in a scatterplot that would show all the separate books with on the x-Axis the publication year and on the y-Axis the number of pages a book would have. The user could than click on a book, or dot, and a tooltip would pop up that would display information about that book. I also refined the vizualisation into a wireframe.
+
+![Wireframe](images/HvA_FD_Wireframe_Data_Visualisatie.jpg)
+
+## Transform data 🛠
+Here I will explain the important parts on how I transformed my data.
 
 ## Sources 📚
 * [OBA API](https://zoeken.oba.nl/api/v1/)
 * [node-oba-api](https://github.com/rijkvanzanten/node-oba-api)
 * [Code provided by Laurens](https://github.com/Razpudding)
+* [D3 multi line chart](https://beta.observablehq.com/@mbostock/d3-multi-line-chart)
+* [D3.js v4 count values in an object](http://www.shanegibney.com/shanegibney/d3-js-v4-count-values-in-an-object/)
+* [D3 change and update axis domain scatterplot](https://stackoverflow.com/questions/43741271/d3-change-and-update-axis-domain-scatterplot)
 
 ### Honourable Mentions
 * [Readme by Daniel van de Velde](https://github.com/DanielvandeVelde/functional-programming/blob/master/README.md)
 * [Code provided by Jesse Dijkman](https://github.com/jesseDijkman1)
+* [Code provided by Sterre van Geest](https://github.com/sterrevangeest)
 
 ## Licence 🔓
 MIT © [Bas Pieren](https://github.com/BasPieren)
