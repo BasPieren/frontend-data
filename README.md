@@ -166,7 +166,7 @@ function appendData(data) {
   // END USE OF SOURCE: Sterre van Geest
 }
 ```
-The last fucntion is uses `console.log` to show the data inside the terminal and calls the `appendData` function.
+The last fucntion is getData and uses `console.log` to show the data inside the terminal and calls the `appendData` function.
 ```js
 function getData(data) {
   var filteredData = filterData(data)
