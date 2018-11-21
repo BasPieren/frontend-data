@@ -64,7 +64,7 @@ I started making multiple sketches with ideas of how I wanted my data visualisat
 ![Pagina 3 schetsen](images/schetsen_Page_4.jpg)
 > Sketch 3
 
-I was playing around with the idea of having a gdata raph transform into a different type of data graph when clicking on an element. I wasn't to sure about what data to use yet. After I got some feedback from [Laurens](https://github.com/Razpudding) I started thinking about using the different languages of books.
+I was playing around with the idea of having a data graph transform into a different type of data graph when clicking on an element. I wasn't to sure about what data to use yet. After I got some feedback from [Laurens](https://github.com/Razpudding) I started thinking about using the different languages of books.
 
 ![Pagina 4 schetsen](images/schetsen_Page_3.jpg)
 > Sketch 4
