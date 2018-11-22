@@ -9,42 +9,51 @@
 </head>
 <body>
 
-  <h1>OBA Boeken over de 2e wereld oorlog uitgegeven tussen 1940 en 1969</h1>
+  <main>
 
-  <p>Door op de checkboxes te kliken kun je een line graph laten zien van het aantal boeken dat is uitgebracht in het
-  Nederlads, Engels, Frans en Duits.</p>
+    <h1>World War II Books</h1>
 
-  <p>Met de knop 'Details' kun de de individuele boeken van een taal zien in een scatterplot. Met de 'Global' knop switch je weer
-  terug naar de line graph</p>
+    <p>Met deze grafiek kun je alle boeken over de 2e wereld oorlog zien die zijn uitgebracht tussen 1940 en 1969 en in welke taal
+    ze gepubliceerd zijn. Door op de checkboxes te klikken kun je een line graph laten zien van het aantal boeken dat is uitgebracht
+    en in welk jaar. Met de knop <span>Details</span> kun je de individuele boeken van een taal zien in een scatterplot.
+    Met de <span>Global</span> knop switch je weer terug naar de line graph.</p>
 
-  <section>
+    <div class="divider"></div>
 
-    <div>
-      <input type="checkbox" id="dut" name="dut">
-      <label for="dut">Nederlandse Boeken</label>
-    </div>
+    <section>
 
-    <div>
-      <input type="checkbox" id="eng" name="eng">
-      <label for="eng">Engelse Boeken</label>
-    </div>
+      <div>
+        <input type="checkbox" id="dut" name="dut">
+        <label for="dut">Nederlandse Boeken</label>
+      </div>
 
-    <div>
-      <input type="checkbox" id="fre" name="fre">
-      <label for="fre">Franse Boeken</label>
-    </div>
+      <div>
+        <input type="checkbox" id="eng" name="eng">
+        <label for="eng">Engelse Boeken</label>
+      </div>
 
-    <div>
-      <input type="checkbox" id="ger" name="ger">
-      <label for="ger">Duitse Boeken</label>
-    </div>
+      <div>
+        <input type="checkbox" id="fre" name="fre">
+        <label for="fre">Franse Boeken</label>
+      </div>
 
-    <button class="detail-button">Details</button>
-    <button class="global-button">Global</button>
+      <div>
+        <input type="checkbox" id="ger" name="ger">
+        <label for="ger">Duitse Boeken</label>
+      </div>
 
-  </section>
+      <button class="detail-button">Details</button>
+      <button class="global-button">Global</button>
 
-  <svg></svg>
+    </section>
+
+    <svg></svg>
+
+    <div class="divider"></div>
+
+    <p>Made by: <a href="https://github.com/BasPieren" target="_blank">@BasPieren</a></p>
+
+  </main>
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script type="text/javascript" src="data/data.js"></script>
