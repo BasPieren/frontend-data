@@ -10,6 +10,7 @@ This is the repo for my frontend data project.
 * [Installing](#installing-)
   * [Packages and technologies](#packages-and-technologies)
 * [Research and concepting](#research-and-concepting-)
+  * [Data](#data)
   * [Sketches](#sketches)
 * [Transform Data](#Transform-data-)
 * [Sources](#sources-)
@@ -51,8 +52,19 @@ This project makes use of the following packages and technologies:
 ## Research and concepting 📑
 This is the research and concepting work I have done in the first week. I wanted to continue with the concept of using books that where published during World War II.
 
-### Sketches
+### Data
+Because I wanted to continue with the concept of using books that where published during World War II, I could continue with the data that I already had gathered during [functional-programming](https://github.com/BasPieren/frontend-data) assignment. I did had to change a couple things about how I gathered the data that you can find in the [Transform Data](#Transform-data-) chapter.
 
+The most important thing was to think about what properties I was gonna need. Eventually I settled on the following:
+
+- Title
+- Publication Year
+- Author
+- Description
+- Language
+- Pages
+
+### Sketches
 I started making multiple sketches with ideas of how I wanted my data visualisation to look:
 
 ![Pagina 1 schetsen](images/schetsen_Page_1.jpg)
