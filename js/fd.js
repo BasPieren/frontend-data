@@ -318,7 +318,7 @@ d3.select('.global-button').on('click', function() {
         .attr('x', 4)
         .attr('text-anchor', 'start')
         .attr('font-weight', 'bold')
-        .text('Number of pages')
+        .text('Number of books')
     )
 })
 
