@@ -36,7 +36,7 @@ var gerBooks = dataLangCount[1].values
 var engBooks = dataLangCount[2].values
 var freBooks = dataLangCount[3].values
 
-// START USE OF SOURCE: https://beta.observablehq.com/@mbostock/d3-area-chart
+// START USE OF SOURCE: https://beta.observablehq.com/@mbostock/d3-multi-line-chart
 var height = 500
 var width = 1000
 var margin = { top: 30, right: 40, bottom: 30, left: 40 }
@@ -46,17 +46,17 @@ var x = d3
   .domain([d3.min(dataArray, d => d.year), d3.max(dataArray, d => d.year)])
   .range([margin.left, width - margin.right])
 
-// START USE OF SOURCE: Jesse Dijkman
 var xAxis = g =>
   g.attr('transform', `translate(0,${height - margin.bottom})`).call(
     d3
       .axisBottom(x)
+      // START USE OF SOURCE: Jesse Dijkman
       .ticks(
         (d3.max(dataArray, d => d.year) - d3.min(dataArray, d => d.year)) / 2
       )
+      // END USE OF SOURCE: Jesse Dijkman
       .tickFormat(d3.format(1))
   )
-// END USE OF SOURCE: Jesse Dijkman
 
 var y = d3
   .scaleLinear()
@@ -322,4 +322,4 @@ d3.select('.global-button').on('click', function() {
     )
 })
 
-// END USE OF SOURCE: https://beta.observablehq.com/@mbostock/d3-area-chart
+// END USE OF SOURCE: https://beta.observablehq.com/@mbostock/d3-multi-line-chart
