@@ -10,13 +10,6 @@ dataFilter = dataArray
   .map(({ year, pages }) => ({ year: year, pages: pages }))
 
 // START USE OF SOURCE: http://www.shanegibney.com/shanegibney/d3-js-v4-count-values-in-an-object/
-dataBookFilter = d3
-  .nest()
-  .key(function(d) {
-    return d.pages
-  })
-  .entries(dataArray)
-
 var dataLangCount = d3
   .nest()
   .key(function(d) {
@@ -119,7 +112,7 @@ svg.append('g').call(yAxis)
 
 d3.selectAll('input').on('change', function() {
   var selectedInput = d3.event.target
-  var selectedInputName = d3.event.target.name
+  var selectedInputName = selectedInput.name
 
   if (selectedInput.checked === true) {
     switch (selectedInputName) {
@@ -239,12 +232,12 @@ d3.selectAll('input').on('change', function() {
 })
 
 d3.select('.detail-button').on('click', function() {
-  d3.select('.linePath')
+  d3.selectAll('.linePath')
     .transition()
     .attr('stroke-width', 0)
     .remove()
 
-  d3.select('.lineDot')
+  d3.selectAll('.lineDot')
     .transition()
     .delay(100)
     .attr('opacity', 0)
@@ -252,8 +245,8 @@ d3.select('.detail-button').on('click', function() {
 
   // START USE OF SOURCE: https://stackoverflow.com/questions/43741271/d3-change-and-update-axis-domain-scatterplot
   y.domain([
-    d3.min(dataBookFilter, d => d.key),
-    d3.max(dataBookFilter, d => d.key)
+    d3.min(dataFilter, d => d.pages),
+    d3.max(dataFilter, d => d.pages)
   ]).nice()
 
   d3.selectAll('.yAxis')
