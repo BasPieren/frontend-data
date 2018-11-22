@@ -64,6 +64,10 @@ The most important thing was to think about what properties I was gonna need. Ev
 - Language
 - Pages
 
+This is how the data looks in the terminal:
+
+![Screenshot data](images/screenshot-data.png)
+
 ### Sketches
 I started making multiple sketches with ideas of how I wanted my data visualisation to look:
 
@@ -195,6 +199,10 @@ function getData(data) {
 }
 ```
 I knew that there were 16 pages with books. By manualy changing the page number and running the code I was able to write all the data from each page to the data.json file. This wouldn't really be practical if there where a lot more pages. If I had more time I would make sure to fix this.
+
+This is how the data looks as a .json file:
+
+![Screenshot json](images/screenshot-json.png)
 
 ## Sources 📚
 * [OBA API](https://zoeken.oba.nl/api/v1/)
